@@ -7,3 +7,7 @@
 def load_file(file):
     with open(file,'r') as text:
         return text.read().split('\n')
+
+def update_string(string1,string2,index):
+    out = string1[:index]+string2+string1[index+1:]
+    print(f'OUTPUT {out}')
