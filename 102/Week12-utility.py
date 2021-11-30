@@ -38,3 +38,10 @@ def score_finder(names,scores,person):
 def union(l1,l2):
     out = l1 + l2
     return out
+
+def intersect(l1,l2):
+    out = []
+    for element in l1:
+        if element in l2:
+            out.append(element)
+    return out
