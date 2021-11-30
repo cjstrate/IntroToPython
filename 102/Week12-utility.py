@@ -18,3 +18,19 @@ def find_word_count(file,word):
     for line in text:
         tcount += line.count(word)
     return tcount
+
+def score_finder(names,scores,person):
+    lower_names = []
+    lower_person = person.lower()
+    for name in names:
+        lower_name = name.lower()
+        lower_names.append(lower_name)
+    i = 0
+    for x in lower_names:
+        if x == lower_person:
+            break
+        i += 1
+    if lower_person in lower_names:
+        print(f'OUTPUT {person} got a score of {scores[i]}')
+    else:
+        print('OUTPUT player not found')
