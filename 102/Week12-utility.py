@@ -45,3 +45,9 @@ def intersect(l1,l2):
         if element in l2:
             out.append(element)
     return out
+def not_in(l1,l2):
+    out = []
+    for element in l1:
+        if element not in l2:
+            out.append(element)
+    return out
