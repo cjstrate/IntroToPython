@@ -34,3 +34,7 @@ def score_finder(names,scores,person):
         print(f'OUTPUT {person} got a score of {scores[i]}')
     else:
         print('OUTPUT player not found')
+
+def union(l1,l2):
+    out = l1 + l2
+    return out
