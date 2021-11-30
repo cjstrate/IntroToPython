@@ -30,6 +30,7 @@ def score_finder(names,scores,person):
             break
         i += 1
     if lower_person in lower_names:
+        person = names[i]
         print(f'OUTPUT {person} got a score of {scores[i]}')
     else:
         print('OUTPUT player not found')
