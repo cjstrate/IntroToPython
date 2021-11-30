@@ -1,7 +1,7 @@
 # Carter Strate
 # CSCI 102 - Section D
 # Week 12 - Utilty using Git and Increment Development
-# References: None
+# References: rookieslab.com for some help on the prime function
 # Time: TBD
 
 def load_file(file):
@@ -51,3 +51,12 @@ def not_in(l1,l2):
         if element not in l2:
             out.append(element)
     return out
+def is_prime(num):
+    if num <= 1:
+        return False
+    i = 2
+    while i*i <= num:
+        if num % i == 0:
+            return False
+        i += 1
+    return True
