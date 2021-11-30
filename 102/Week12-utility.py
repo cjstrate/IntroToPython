@@ -12,9 +12,8 @@ def update_string(string1,string2,index):
     out = string1[:index]+string2+string1[index+1:]
     print(f'OUTPUT {out}')
 
-def find_word_count(file,word):
+def find_word_count(text,word):
     tcount = 0
-    text = load_file(file)
     for line in text:
         tcount += line.count(word)
     return tcount
